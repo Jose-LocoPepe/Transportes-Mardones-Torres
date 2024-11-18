@@ -4,13 +4,13 @@ using Transportes_Mardones_Torres;
 
 namespace MyApp.Namespace
 {
-    public class ListarBusesModel : PageModel
+    public class ListarViajeModel : PageModel
     {
-        public List<Bus> ListaBuses { get; set; }
+        public List<Viaje> ListaViajes { get; set; }
         public void OnGet()
         {
             TransporteContext context = new TransporteContext();
-            ListaBuses = context.Buses.ToList();
+            ListaViajes = context.Viajes.ToList();
         }
     }
 }

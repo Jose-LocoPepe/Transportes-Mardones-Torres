@@ -17,7 +17,7 @@ public partial class TransporteContext : DbContext
 
     public virtual DbSet<Bus> Buses { get; set; }
 
-    public virtual DbSet<Chofer> Chofers { get; set; }
+    public virtual DbSet<Chofer> Choferes { get; set; }
 
     public virtual DbSet<Kilometraje> Kilometrajes { get; set; }
 

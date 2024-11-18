@@ -1,4 +1,34 @@
 ﻿@page
 @model MyApp.Namespace.ListarChoferesModel
 @{
+
+<div class="container">
+    <h1>Listado de Choferes</h1>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;" class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Disponibilidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var chofer in Model.ListaChoferes)
+            {
+                <tr>
+                    <td>@chofer.Id</td>
+                    <td>@chofer.Nombre</td>
+                    <td>@chofer.Apellido</td>
+                    <td>@(chofer.Disponibilidad ? "Disponible" : "No Disponible")</td>
+                    <td>
+                        <a href="/CRUD/ActualizarChofer?id=@chofer.Id">Editar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 }

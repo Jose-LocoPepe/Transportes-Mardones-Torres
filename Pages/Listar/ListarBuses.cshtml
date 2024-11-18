@@ -1,4 +1,33 @@
 ﻿@page
 @model MyApp.Namespace.ListarBusesModel
 @{
+<div class="container">
+    <h1>Listado de Buses</h1>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;" class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Patente</th>
+                <th>Código</th>
+                <th>Disponibilidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bus in Model.ListaBuses)
+            {
+                <tr>
+                    <td>@bus.Id</td>
+                    <td>@bus.Patente</td>
+                    <td>@bus.Codigo</td>
+                    <td>@(bus.Disponibilidad ? "Disponible" : "No Disponible")</td>
+                    <td>
+                        <a href="/Buses/Actualizar?id=@bus.Id">Editar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 }
