@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Transportes-Mardones-Torres")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db905e1dea06085daff40a674cb8c93a99efa918")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e78b49d9fd1b006b1a44e66ced71a18e92f51687")]
 [assembly: System.Reflection.AssemblyProductAttribute("Transportes-Mardones-Torres")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Transportes-Mardones-Torres")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
