@@ -1,10 +1,35 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Panel de Control";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h1>Bienvenido al Sistema de Gestión</h1>
+
+<div>
+    <h2>Gestión de Buses</h2>
+    <ul>
+        <li><a href="/Actualizar/ActualizarBus">Actualizar Bus</a></li>
+        <li><a href="/Crear/NuevoBus">Crear Nuevo Bus</a></li>
+        <li><a href="/Eliminar/EliminarBus">Eliminar Bus</a></li>
+        <li><a href="/Listar/ListarBuses">Listar Buses</a></li>
+    </ul>
+</div>
+
+<div>
+    <h2>Gestión de Choferes</h2>
+    <ul>
+        <li><a href="/Actualizar/ActualizarChofer">Actualizar Chofer</a></li>
+        <li><a href="/Crear/NuevoChofer">Crear Nuevo Chofer</a></li>
+        <li><a href="/Eliminar/EliminarChofer">Eliminar Chofer</a></li>
+        <li><a href="/Listar/ListarChoferes">Listar Choferes</a></li>
+    </ul>
+</div>
+
+<div>
+    <h2>Gestión de Viajes</h2>
+    <ul>
+        <li><a href="/Crear/NuevoViaje">Crear Nuevo Viaje</a></li>
+        <li><a href="/Listar/ListarViajes">Listar Viajes</a></li>
+    </ul>
 </div>
