@@ -18,12 +18,52 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Loco Pepe\Documents\GitHub\Transportes-Mardones-Torres
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Actualizar/ActualizarBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0dWFsaXphclxBY3R1YWxpemFyQnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Actualizar/ActualizarChofer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0dWFsaXphclxBY3R1YWxpemFyQ2hvZmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Crear/NuevoBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXJcTnVldm9CdXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Crear/NuevoChofer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXJcTnVldm9DaG9mZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Crear/NuevoViaje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXJcTnVldm9WaWFqZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Eliminar/EliminarBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWxpbWluYXJcRWxpbWluYXJCdXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Eliminar/EliminarChofer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWxpbWluYXJcRWxpbWluYXJDaG9mZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Listar/ListarBuses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdGFyXExpc3RhckJ1c2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Listar/ListarChoferes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdGFyXExpc3RhckNob2ZlcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Listar/ListarViajes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdGFyXExpc3RhclZpYWplcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Loco Pepe/Documents/GitHub/Transportes-Mardones-Torres/Pages/Privacy.cshtml]
