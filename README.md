@@ -1,15 +1,7 @@
 <!-- PROYECTO -->
 <br />
 <div align="center">
-  <a href="https://google.cl">
-    <img src="https://i.imgur.com/PcEE9Go.png" alt="Logo" >
-  </a>
-
-  <h3 align="center">Vuelta al menu en 365 platos - Maestros Solucionadores.</h3>
-
-  <p align="center">
-    Aplicación de delivery "Vuelta al menu en 365 platos ".
-  </p>
+  <h3 align="center">Transportes Mardones Torres.</h3>
 </div>
 
 # Full-Stack - Aplicacion para gestión de buses y tansportes "Transporte Mardones Torres"
