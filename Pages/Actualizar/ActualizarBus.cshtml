@@ -1,4 +1,56 @@
-﻿@page
+﻿@page "{id:int?}"
 @model MyApp.Namespace.ActualizarBusModel
 @{
+    ViewData["Title"] = "Actualizar Bus";
+
+<h1>Actualizar Bus</h1>
+
+@if (Model.bus == null)
+{
+    <p>No se encontró el bus con el ID especificado.</p>
+}
+else
+{
+    <form method="post">
+        <table style="border-collapse: collapse; width: 50%; margin-bottom: 20px;">
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">Patente Actual:</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">@Model.bus.Patente</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">Código Actual:</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">@Model.bus.Codigo</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">Disponibilidad Actual:</td>
+                <td style="padding: 8px; border: 1px solid #ddd;">@(Model.bus.Disponibilidad ? "Disponible" : "No Disponible")</td>
+            </tr>
+        </table>
+
+        <h3>Actualizar Datos</h3>
+        <div>
+            <label for="patente">Nueva Patente:</label>
+            <input type="text" id="patente" name="patente" value="@Model.bus.Patente" 
+                   pattern="[A-Z]{4}\d{2}" 
+                   title="La patente debe tener el formato XXXX00 (4 letras mayúsculas seguidas de 2 dígitos)." 
+                   required />
+        </div>
+        
+        <div>
+            <label for="codigo">Nuevo Código:</label>
+            <input type="text" id="codigo" name="codigo" value="@Model.bus.Codigo" 
+                   maxlength="50" 
+                   required />
+        </div>
+        
+        <div>
+            <label for="disponibilidad">Nueva Disponibilidad:</label>
+            <select id="disponibilidad" name="disponibilidad">
+                <option value="true" selected="@(Model.bus.Disponibilidad)">Disponible</option>
+                <option value="false" selected="@(Model.bus.Disponibilidad == false)">No Disponible</option>
+            </select>
+        </div>
+        <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px;">Guardar Cambios</button>
+    </form>
+}
 }
