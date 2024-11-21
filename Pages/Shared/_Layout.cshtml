@@ -22,6 +22,37 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Inicio</a>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Buses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Crear/NuevoBus">Añadir</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Eliminar/EliminarBus">Eliminar</a></li>
+                                @* <li><hr class="dropdown-divider"></li> *@
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Listar/ListarBuses">Listar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Choferes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Crear/NuevoChofer">Añadir</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Eliminar/EliminarChofer">Eliminar</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Listar/ListarChoferes">Listar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Viajes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Crear/NuevoViaje">Añadir</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Listar/ListarViajes">Listar</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>

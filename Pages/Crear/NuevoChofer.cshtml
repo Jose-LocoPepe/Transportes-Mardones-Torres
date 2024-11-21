@@ -2,3 +2,25 @@
 @model MyApp.Namespace.NuevoChoferModel
 @{
 }
+<h1>Agregar Chofer</h1>
+<form method="post">
+    <div class="form-group">
+        <p>Nombre: 
+            <input class="form-control" name="nombre"/>
+        </p>
+    </div>
+    <div class="form-group">
+        <p>Apellido:
+            <input class="form-control" name="apellido"/>
+        </p>
+    </div>
+    <div class="form-group">
+        <p>Disponibilidad:
+            <Select class="form-control" name="disponibilidad">
+                <option value="true">Disponible</option>
+                <option value="false">No Disponible</option>
+            </Select>
+        </p>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
