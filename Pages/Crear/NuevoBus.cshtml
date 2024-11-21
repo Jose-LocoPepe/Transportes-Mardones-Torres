@@ -2,3 +2,25 @@
 @model MyApp.Namespace.NuevoBusModel
 @{
 }
+<h1>Agregar Bus</h1>
+<form method="post">
+    <div class="form-group">
+        <p>Patente: 
+            <input class="form-control" name="patente"/>
+        </p>
+    </div>
+    <div class="form-group">
+        <p>Código:
+            <input class="form-control" name="codigo"/>
+        </p>
+    </div>
+    <div class="form-group">
+        <p>Disponibilidad:
+            <Select class="form-control" name="disponibilidad">
+                <option value="true">Disponible</option>
+                <option value="false">No Disponible</option>
+            </Select>
+        </p>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

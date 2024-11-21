@@ -32,6 +32,11 @@ public partial class TransporteContext : DbContext
         // Get the connection string from environment variables
         var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
 
+        if (string.IsNullOrEmpty(connectionString))
+        {
+            throw new InvalidOperationException("DB_CONNECTION_STRING environment variable is not set.");
+        }
+
         optionsBuilder.UseMySQL(connectionString);
     }
 

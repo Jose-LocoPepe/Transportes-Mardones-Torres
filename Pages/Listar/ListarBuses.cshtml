@@ -3,7 +3,12 @@
 @{
 <div class="container">
     <h1>Listado de Buses</h1>
-
+    @if (Model.ListaBuses == null || !Model.ListaBuses.Any())
+    {
+        <p style="margin-top: 20%;text-align: center;font-weight: bold;color:red">No hay buses disponibles.</p>
+    }
+    else
+    {
     <table style="width: 100%; border-collapse: collapse; margin-top: 20px;" class="table table-striped">
         <thead>
             <tr>
@@ -29,5 +34,6 @@
             }
         </tbody>
     </table>
+    }
 </div>
 }
