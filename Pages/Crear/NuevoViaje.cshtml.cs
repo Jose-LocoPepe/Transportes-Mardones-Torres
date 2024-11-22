@@ -5,8 +5,8 @@ namespace MyApp.Namespace
 {
     public class NuevoViajeModel : PageModel
     {
-        public List<Bus> ListaBuses { get; set; }
-        public List<Chofer> ListaChoferes { get; set; }
+        public List<Bus> ListaBuses { get; set; } = new List<Bus>();
+        public List<Chofer> ListaChoferes { get; set; } = new List<Chofer>();
 
         public void OnGet()
         {

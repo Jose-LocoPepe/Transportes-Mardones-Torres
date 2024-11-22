@@ -2,3 +2,31 @@
 @model MyApp.Namespace.EliminarBusModel
 @{
 }
+<h1>Eliminar Bus</h1>
+<form method="post">
+    <div class="form-group">
+        <p>Seleccione el bus que desea eliminar:
+            <select class="form-control" name="bus">
+                @if (Model.ListaBuses == null || !Model.ListaBuses.Any())
+                {
+                    <option value="" disabled selected>No hay vehículos que se puedan eliminar o que no estén asignados a un viaje.</option>   
+                }
+                else
+                {
+                    @foreach (var vehiculo in Model.ListaBuses)
+                    {
+                        <option value="@vehiculo.Id">Patente: @vehiculo.Patente | Código: @vehiculo.Codigo</option>
+                    }
+                }
+            </select>
+        </p>
+    </div>
+    @if (Model.ListaBuses == null || !Model.ListaBuses.Any())
+    {
+        <button type="submit" class="btn btn-danger" disabled>Eliminar</button>
+    }
+    else
+    {
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+    }
+</form>

@@ -6,7 +6,7 @@ namespace MyApp.Namespace
 {
     public class ActualizarChoferModel : PageModel
     {
-        public Chofer chofer { get; set; }
+        public Chofer chofer { get; set; } = new Chofer();
         public void OnGet()
         {
             TransporteContext context = new TransporteContext();

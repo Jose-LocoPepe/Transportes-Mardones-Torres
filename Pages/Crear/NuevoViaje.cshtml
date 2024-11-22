@@ -2,22 +2,23 @@
 @model MyApp.Namespace.NuevoViajeModel
 @{
     ViewData["Title"] = "Agendar Viaje";
+    DateTime maxDate = DateTime.Now.AddYears(1);
 }
 <h1>Agendar nuevo viaje</h1>
 <form method="post">
     <div class="form-group">
         <p>Ciudad de Origen:
-            <input class="form-control" name="origen" required/>
+            <input class="form-control" name="origen" required maxlength="50"/>
         </p>
     </div>
     <div class="form-group">
         <p>Ciudad de Destino:
-            <input class="form-control" name="destino" required/>
+            <input class="form-control" name="destino" required maxlength="50"/>
         </p>
     </div>
     <div class="form-group">
         <p>Fecha de inicio:
-            <input class="form-control" type="date" name="fecha" required min="@DateTime.Now.ToString("yyyy-MM-dd")"/>
+            <input class="form-control" type="date" name="fecha" required min="@DateTime.Now.ToString("yyyy-MM-dd")" max="@maxDate.ToString("yyyy-MM-dd")"/>
         </p>
     </div>
     

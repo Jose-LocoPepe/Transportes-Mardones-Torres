@@ -17,6 +17,8 @@
                 <th>Ciudad Destino</th>
                 <th>Fecha Inicio</th>
                 <th>Estado</th>
+                <th>Vehículo (Patente|Código)</th>
+                <th>Conductor</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -29,6 +31,8 @@
                     <td>@viaje.CiudadDestino</td>
                     <td>@viaje.FechaInicio.ToString("dd/MM/yyyy")</td>
                     <td>@viaje.Estado</td>
+                    <td>@viaje.IdBusNavigation.Patente | @viaje.IdBusNavigation.Codigo</td>
+                    <td>@viaje.IdChoferNavigation.Nombre @viaje.IdChoferNavigation.Apellido</td>
                     <td>
                         <a href="/Viaje/ActualizarViaje?id=@viaje.Id">Editar</a>
                     </td>

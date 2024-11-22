@@ -6,7 +6,7 @@ namespace MyApp.Namespace
 {
     public class ListarBusesModel : PageModel
     {
-        public List<Bus> ListaBuses { get; set; }
+        public List<Bus> ListaBuses { get; set; } = new List<Bus>();
         public void OnGet()
         {
             TransporteContext context = new TransporteContext();

@@ -6,7 +6,7 @@ namespace MyApp.Namespace
 {
     public class ActualizarBusModel : PageModel
     {
-        public Bus bus { get; set; }
+        public Bus bus { get; set; } = new Bus();
         public IActionResult OnGet(int? id)
         {
             TransporteContext context = new TransporteContext();
