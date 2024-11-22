@@ -6,7 +6,7 @@
 <form method="post">
     <div class="form-group">
         <p>Seleccione el bus que desea eliminar:
-            <select class="form-control" name="bus">
+            <select class="form-control" name="IDbus">
                 @if (Model.ListaBuses == null || !Model.ListaBuses.Any())
                 {
                     <option value="" disabled selected>No hay vehículos que se puedan eliminar o que no estén asignados a un viaje.</option>   

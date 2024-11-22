@@ -11,5 +11,14 @@ namespace MyApp.Namespace
             TransporteContext context = new TransporteContext();
             ListaBuses = context.Buses.Where(bus => !context.Viajes.Any(viaje => viaje.IdBus == bus.Id)).ToList();
         }
+
+        public void OnPost(int IDbus)
+        {
+            TransporteContext context = new TransporteContext();
+            Bus bus = context.Buses.Find(IDbus);
+            context.Buses.Remove(bus);
+            context.SaveChanges();
+            OnGet();
+        }
     }
 }
