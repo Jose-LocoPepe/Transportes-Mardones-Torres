@@ -5,11 +5,11 @@ namespace MyApp.Namespace
 {
     public class EliminarBusModel : PageModel
     {
-        public List<Bus> ListaBuses { get; set; } = new List<Bus>();
+        // public List<Bus> ListaBuses { get; set; } = new List<Bus>();
         public void OnGet()
         {
-            TransporteContext context = new TransporteContext();
-            ListaBuses = context.Buses.Where(bus => !context.Viajes.Any(viaje => viaje.IdBus == bus.Id)).ToList();
+            // TransporteContext context = new TransporteContext();
+            // ListaBuses = context.Buses.Where(bus => !context.Viajes.Any(viaje => viaje.IdBus == bus.Id)).ToList();
         }
 
         // public void OnPost(int IDbus)
