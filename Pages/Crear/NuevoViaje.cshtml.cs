@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Transportes_Mardones_Torres;
+using Transportes_Mardones_Torres.Models;
 namespace MyApp.Namespace
 {
     public class NuevoViajeModel : PageModel
@@ -15,15 +15,12 @@ namespace MyApp.Namespace
             ListaChoferes = context.Choferes.Where(chofer => chofer.Disponibilidad).ToList();
         }
 
-        public void OnPost(int bus, int chofer, DateTime fecha, string origen, string destino)
+        public void OnPost(int bus, int chofer, DateTime fecha)
         {
             Viaje viaje = new Viaje();
             viaje.IdBus = bus;
             viaje.IdChofer = chofer;
-            viaje.FechaInicio = fecha;
-            viaje.CiudadOrigen = origen;
-            viaje.CiudadDestino = destino;
-            viaje.Estado = "Pendiente";
+            viaje.Fecha = fecha;
 
             
             //TODO: Falta hacer la tabla de kilometraje y ¿calcular? la distancia

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Transportes_Mardones_Torres;
+using Transportes_Mardones_Torres.Models;
 using Microsoft.EntityFrameworkCore;
 namespace MyApp.Namespace
 {
