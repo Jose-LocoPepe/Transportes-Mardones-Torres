@@ -6,12 +6,13 @@
 
 ## Table of Contents
 - [Introducción](#introducción)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Pasos de Ejecución](#pasos_de_ejecución)
-- [Iniciar la Aplicación](#iniciar_la_aplicación)
-- [Versionado](#versionado)
-- [Autores](#autores)
-- [Licencia](#licencia)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas-🖥️)
+- [Pasos de Ejecución](#pasos-de-ejecución)
+- [Migraciones](#migraciones)
+- [Iniciar la Aplicación](#iniciar-la-aplicación)
+- [Versionado](#versionado-📌)
+- [Autores](#autores-✒️)
+- [Licencia](#licencia-📄)
 
 
 # Full-Stack - Aplicacion para gestión de buses y tansportes "Transporte Mardones Torres"
@@ -25,6 +26,13 @@ Está diseñado para manejar buses, choferes y viajes entre ciudades.
 - [ASP.NET](https://dotnet.microsoft.com/en-us/)
 - [MySQL](https://www.mysql.com)
 - [MySQL Workbench](https://dev.mysql.com/downloads/installer/)
+
+
+
+Asegúrate de tener instalada la herramienta de Entity Framework Core CLI:
+```bash
+dotnet tool install --global dotnet-ef
+```
 
 ### Pasos de Ejecución
 
@@ -45,6 +53,12 @@ password = Es la contraseña del usuario.
 Ejecuta el siguiente comando en un terminal para poder instalar las dependencias en el proyecto.
 ```bash
 dotnet restore
+```
+
+### Migraciones
+Ejecuta el siguiente comando para aplicar las migraciones y crear el esquema de la base de datos:
+```bash
+dotnet ef database update
 ```
 
 ### Iniciar la Aplicación
