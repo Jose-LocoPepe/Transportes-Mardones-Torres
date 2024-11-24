@@ -20,14 +20,14 @@ namespace MyApp.Namespace
 
 
         }
-        public IActionResult OnPost(Chofer chofer)
-        {
-            TransporteContext context = new TransporteContext();
-            // Se actualiza el chofer
-            context.Choferes.Update(chofer);
-            context.SaveChanges();
-            // Se redirige a la página de inicio
-            return Redirect("/");
-        }
+        // public IActionResult OnPost(Chofer chofer)
+        // {
+        //     TransporteContext context = new TransporteContext();
+        //     // Se actualiza el chofer
+        //     context.Choferes.Update(chofer);
+        //     context.SaveChanges();
+        //     // Se redirige a la página de inicio
+        //     return Redirect("/");
+        // }
     }
 }

@@ -10,18 +10,18 @@ namespace MyApp.Namespace
         {
         }
 
-        public void OnPost(string patente, string codigo, bool disponibilidad)
-        {
-            Bus bus = new Bus();
-            bus.Patente = patente;
-            bus.Codigo = codigo;
-            bus.Disponibilidad = disponibilidad;
+        // public void OnPost(string patente, string codigo, bool disponibilidad)
+        // {
+        //     Bus bus = new Bus();
+        //     bus.Patente = patente;
+        //     bus.Codigo = codigo;
+        //     bus.Disponibilidad = disponibilidad;
             
-            TransporteContext context = new TransporteContext();
-            context.Buses.Add(bus);
-            context.SaveChanges();
+        //     TransporteContext context = new TransporteContext();
+        //     context.Buses.Add(bus);
+        //     context.SaveChanges();
 
-            Response.Redirect("/Listar/ListarBuses");
-        }
+        //     Response.Redirect("/Listar/ListarBuses");
+        // }
     }
 }

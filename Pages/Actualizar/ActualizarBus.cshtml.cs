@@ -21,14 +21,14 @@ namespace MyApp.Namespace
             return Page();
 
         }
-        public IActionResult OnPost(Bus bus)
-        {
-            TransporteContext context = new TransporteContext();
-            // Se actualiza el bus
-            context.Buses.Update(bus);
-            context.SaveChanges();
-            // Se redirige a la página de inicio
-            return Redirect("/");
-        }
+        // public IActionResult OnPost(Bus bus)
+        // {
+        //     TransporteContext context = new TransporteContext();
+        //     // Se actualiza el bus
+        //     context.Buses.Update(bus);
+        //     context.SaveChanges();
+        //     // Se redirige a la página de inicio
+        //     return Redirect("/");
+        // }
     }
 }

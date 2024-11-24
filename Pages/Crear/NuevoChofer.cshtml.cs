@@ -9,18 +9,18 @@ namespace MyApp.Namespace
         {
         }
 
-        public void OnPost(string nombre, string apellido, bool disponibilidad)
-        {
-            Chofer chofer = new Chofer();
-            chofer.Nombre = nombre;
-            chofer.Apellido = apellido;
-            chofer.Disponibilidad = disponibilidad;
+        // public void OnPost(string nombre, string apellido, bool disponibilidad)
+        // {
+        //     Chofer chofer = new Chofer();
+        //     chofer.Nombre = nombre;
+        //     chofer.Apellido = apellido;
+        //     chofer.Disponibilidad = disponibilidad;
             
-            TransporteContext context = new TransporteContext();
-            context.Choferes.Add(chofer);
-            context.SaveChanges();
+        //     TransporteContext context = new TransporteContext();
+        //     context.Choferes.Add(chofer);
+        //     context.SaveChanges();
 
-            Response.Redirect("/Listar/ListarChoferes");
-        }
+        //     Response.Redirect("/Listar/ListarChoferes");
+        // }
     }
 }
