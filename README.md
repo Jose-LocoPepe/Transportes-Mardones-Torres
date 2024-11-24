@@ -6,13 +6,13 @@
 
 ## Tabla de Contenidos
 - [Introducción](#introducción)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas-)
 - [Pasos de Ejecución](#pasos-de-ejecución)
 - [Migraciones](#migraciones)
 - [Iniciar la Aplicación](#iniciar-la-aplicación)
-- [Versionado](#versionado)
-- [Autores](#autores)
-- [Licencia](#licencia)
+- [Versionado](#versionado-)
+- [Autores](#autores-)
+- [Licencia](#licencia-)
 
 
 # Full-Stack - Aplicacion para gestión de buses y tansportes "Transporte Mardones Torres"
