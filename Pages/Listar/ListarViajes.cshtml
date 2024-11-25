@@ -1,39 +1,37 @@
 ﻿@page
 @model MyApp.Namespace.ListarViajesModel
 @{
-    <div class="container">
-    <h1>Listado de Viajes</h1>
-    @if (Model.ListaViajes.Count == 0)
-    {
-        <p style="margin-top: 7%;text-align: center;font-weight: bold;color:red">No hay viajes registrados.</p>
-    }
-    else
-    {
-    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;" class="table table-striped">
-        <thead>
+    ViewData["Title"] = "Listado de Viajes";
+}
+
+<h1>Listado de Viajes</h1>
+@if (Model.ListaViajes.Count == 0)
+{
+    <p style="margin-top: 7%;text-align: center;font-weight: bold;color:red">No hay viajes registrados.</p>
+}
+else
+{
+<table style="width: 100%; border-collapse: collapse; margin-top: 20px;" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Fecha Inicio</th>
+            <th>Origen - Destino</th>
+            <th>Distancia (km)</th>
+            <th>Conductor</th>
+            <th>Vehículo (Patente-Código)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var viaje in Model.ListaViajes)
+        {
             <tr>
-                <th>ID</th>
-                <th>Fecha Inicio</th>
-                <th>Vehículo (Patente|Código)</th>
-                <th>Conductor</th>
-                <th>Acciones</th>
+                <td>@viaje.Fecha.ToString("dd/MM/yyyy")</td>
+                <td>@viaje.IdTramoNavigation.Nombre</td>
+                <td>@viaje.IdTramoNavigation.Distancia</td>
+                <td>@viaje.IdChoferNavigation.Nombre @viaje.IdChoferNavigation.Apellido</td>
+                <td>@viaje.IdBusNavigation.Patente - @viaje.IdBusNavigation.Codigo</td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var viaje in Model.ListaViajes)
-            {
-                <tr>
-                    <td>@viaje.Id</td>
-                    <td>@viaje.Fecha.ToString("dd/MM/yyyy")</td>
-                    <td>@viaje.IdBusNavigation.Patente | @viaje.IdBusNavigation.Codigo</td>
-                    <td>@viaje.IdChoferNavigation.Nombre @viaje.IdChoferNavigation.Apellido</td>
-                    <td>
-                        <a href="/Viaje/ActualizarViaje?id=@viaje.Id">Editar</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-    }
-</div>
+        }
+    </tbody>
+</table>
 }

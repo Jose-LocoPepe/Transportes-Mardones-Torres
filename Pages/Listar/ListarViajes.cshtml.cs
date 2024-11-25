@@ -13,6 +13,7 @@ namespace MyApp.Namespace
             ListaViajes = context.Viajes
                                  .Include(v => v.IdBusNavigation)
                                  .Include(v => v.IdChoferNavigation)
+                                 .Include(v => v.IdTramoNavigation)
                                  .ToList();
         }
     }

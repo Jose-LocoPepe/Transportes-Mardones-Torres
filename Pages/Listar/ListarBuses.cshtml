@@ -1,6 +1,8 @@
 ﻿@page
 @model MyApp.Namespace.ListarBusesModel
 @{
+    ViewData["Title"] = "Listado de Buses";
+}
 <div class="container">
     <h1>Listado de Buses</h1>
     @if (Model.ListaBuses == null || !Model.ListaBuses.Any())
@@ -12,28 +14,29 @@
     <table style="width: 100%; border-collapse: collapse; margin-top: 20px;" class="table table-striped">
         <thead>
             <tr>
-                <th>ID</th>
+                @* <th>ID</th> *@
                 <th>Patente</th>
                 <th>Código</th>
-                <th>Disponibilidad</th>
-                <th>Acciones</th>
+                <th>Estado</th>
+                <th>Distancia recorrida (km)</th>
+                @* <th>Acciones</th> *@
             </tr>
         </thead>
         <tbody>
             @foreach (var bus in Model.ListaBuses)
             {
                 <tr>
-                    <td>@bus.Id</td>
+                    @* <td>@bus.Id</td> *@
                     <td>@bus.Patente</td>
                     <td>@bus.Codigo</td>
                     <td>@(bus.Disponibilidad ? "Disponible" : "No Disponible")</td>
-                    <td>
+                    <td>@bus.Kilometros</td>
+                    @* <td>
                         <a href="/Actualizar/ActualizarBus?id=@bus.Id">Editar</a>
-                    </td>
+                    </td> *@
                 </tr>
             }
         </tbody>
     </table>
     }
 </div>
-}
