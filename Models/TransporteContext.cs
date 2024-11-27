@@ -26,18 +26,27 @@ public partial class TransporteContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        // Load environment variables from .env file
-        DotNetEnv.Env.Load();
-
-        // Get the connection string from environment variables
-        var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
-
-        if (string.IsNullOrEmpty(connectionString))
+        try
         {
-            throw new InvalidOperationException("DB_CONNECTION_STRING environment variable is not set.");
-        }
+            // Load environment variables from .env file
+            DotNetEnv.Env.Load();
 
-        optionsBuilder.UseMySQL(connectionString);
+            // Get the connection string from environment variables
+            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                throw new InvalidOperationException("DB_CONNECTION_STRING environment variable is not set.");
+            }
+
+            optionsBuilder.UseMySQL(connectionString);
+        }
+        catch (Exception ex)
+        {
+            // Log the exception or handle it as needed
+            Console.Error.WriteLine($"An error occurred while configuring the database: {ex.Message}");
+            throw; // Re-throw the exception to ensure the application is aware of the failure
+        }
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
